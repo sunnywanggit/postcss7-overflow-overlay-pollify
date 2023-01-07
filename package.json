@@ -1,0 +1,61 @@
+{
+  "name": "postcss7-overflow-overlay-pollify",
+  "version": "1.0.0-alpha.1",
+  "description": "一款自动为带有 'overflow: overlay' 属性的元素添加 'overflow: auto' 属性的 PostCSS7 插件",
+  "keywords": [
+    "postcss7",
+    "css",
+    "postcss7-plugin",
+    "postcss7-overflow-overlay-pollify",
+    "overflow",
+    "overlay",
+    "scroll",
+    "chrome"
+  ],
+  "author": "dachui",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sunnywanggit/postcss7-overflow-overlay-pollify.git"
+  },
+  "scripts": {
+    "test": "jest --coverage && eslint .",
+    "test:watch": "jest --coverage --watch"
+  },
+  "engines": {
+    "node": ">=12.0.0"
+  },
+  "peerDependencies": {
+    "postcss": "^7.0.27"
+  },
+  "devDependencies": {
+    "clean-publish": "^3.4.2",
+    "eslint": "^8.0.1",
+    "eslint-plugin-jest": "^25.2.2",
+    "jest": "^27.3.1",
+    "postcss": "^7.0.27"
+  },
+  "eslintConfig": {
+    "parserOptions": {
+      "ecmaVersion": 2017
+    },
+    "env": {
+      "node": true,
+      "es6": true
+    },
+    "extends": [
+      "eslint:recommended",
+      "plugin:jest/recommended"
+    ],
+    "rules": {
+      "jest/expect-expect": "off"
+    }
+  },
+  "jest": {
+    "coverageThreshold": {
+      "global": {
+        "statements": 100
+      }
+    }
+  }
+}
